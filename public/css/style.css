@@ -1,0 +1,33 @@
+#chat{
+  display : none;
+}
+#pregame{
+  display : none;
+}
+#sideMessagePreGame{
+	display : none;
+}
+#ready{
+  display : none;
+}
+#startBtn {
+  display : none;
+}
+#vote {
+  display : none;
+}
+#continueSection{
+	display : none;
+}
+#newGame{
+	display : none;
+}
+.well p{
+	font-size: 15pt;
+}
+#title {
+  text-align: center
+}
+#login {
+  text-align: center
+}

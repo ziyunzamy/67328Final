@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+  <html>
+  <header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  	<!-- Notice that socket.io adds a path to its client-side js that is not in /public -->
+  	<script src="/socket.io/socket.io.js"></script>
+  	<!-- This is my example client-side javascript that uses socket.io -->
+  	<script src="/javascripts/clientSocket.js"></script>
+    </header>
+  	<body>
+    <div class="container">
+    <div class="row" id="title">
+    <h1>Who is Spy</h1>
+    <hr>
+    </div>
+    <div class="row" id="login">
+        <div class="form">
+        <h3 class="title">What's your name?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </div>
+    	<div class="col-md-4">
+    		<div class="row" id="sideMessagePreGame">
+    		<div class='well'><p> There are currently <span id="numPlayers">no</span> players in the game.</p></div>
+        	<div class='well'><p>We can start the game once we have 4 people in the game!</p></div>
+        	</div>
+    	</div>
+    	<div class="col-md-1"></div>
+    <div class="col-md-7">
+      <div class="row" id="pregame">
+          <h1><span id="welcomePlayers"></span></h1>
+          <h1><span id="readyPlayers"></span></h1>
+        <a id="startBtn" class="btn btn-primary">Start</a>
+      </div>
+      <div class="row" id="chat">
+        <h1 id="word">Your word is: </h1>
+        <br>
+       <div class="chat" id="chatDisplay"></div>
+       <form id="messageForm">
+         <div class="form-group">
+         <label>Enter Message</label>
+         <textarea class="form-control" id="message"></textarea>
+         <br>
+         <input type="submit" class="btn btn-primary" value="Send Message" />
+         </div>
+       </form>
+      </div>
+      <div class="row" id="vote">
+      <form id='voteForm' class='form-check'></form>
+      </div>
+      <div class="row" id="continueSection">
+      	<a id="continueBtn" class="btn btn-primary">continue</a>
+      </div>
+      <div class="row" id="newGame">
+      	<a id="newGameBtn" class="btn btn-primary">New Game</a>
+      </div>
+      </div>
+    </div>
+  	</body>
+ </html>
